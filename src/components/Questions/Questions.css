@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap");
+root {
+  --primaryColor: hsl(14,90%,53%);
+  --primaryColorLight: hsl(14,96%,91%);
+  --bgColor: hsl(0 , 0% , 100%);
+  --formColor: hsl(20 , 42% , 87%);
+  --whiteColor: hsl(0 , 0% , 100%);
+  --blackColor: hsl(0 , 0% , 18%);
+  --grayText: hsl(0 , 0% , 51%);
+  --inputColor: hsl(330 , 12% , 97%);
+  --cardColor: hsl(300 , 3% , 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.accordionContainer .title {
+  font-size: var(--normalFontSize);
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  background: var(--primaryColorLight);
+}
+.accordionContainer .title span {
+  cursor: pointer;
+}
+.accordionContainer .title span .icon {
+  font-size: 1.2rem;
+  color: var(--blackColor);
+}
+.accordionContainer .description {
+  font-size: var(--smallestFontSize);
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  white-space: pre-line;
+  height: 140px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  padding: 0 1rem;
+  background: var(--cardColor);
+  border-radius: 0 0 10px 10px;
+  color: var(--blackColor);
+}
+.accordionContainer .show {
+  height: 140px;
+  opacity: 1;
+}
+.accordionContainer .activeTitle {
+  background: var(--primaryColorLight);
+  border-radius: 10px 10px 0 0;
+}/*# sourceMappingURL=Questions.css.map */
